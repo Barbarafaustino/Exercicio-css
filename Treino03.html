@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Float e Clear</title>
+ <style>
+.conteudo{
+ margin: 2px, solid black;
+ background-color: blue;
+ padding: 5px;
+ margin: 5px;
+ width: 150px;
+height: 150px;
+float: left;
+}
+ .clear{
+ clear: both;
+ }
+ .principal{
+ margin: solid black 3px;
+ background-color: red;
+ }
+</style>
+</head>
+<body>
+<div class="principal">
+<div class="conteudo">
+ CONTEÚDO 01
+</div>
+ <div class="conteudo">
+ CONTEÚDO 02
+ </div>
+ <div class="conteudo">
+ CONTEÚDO 03
+ </div>
+ <div class="clear">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quidem facilis provident neque assumenda. Est dolore animi similique recusandae dicta, odio deleniti nihil repellendus temporibus eos? Repellendus numquam vero labore.</p>
+ </div>
+ </div>
+ <div class="conteudo">
+    CONTEÚDO 03
+    </div>
+    <div class="clear">
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quidem facilis provident neque assumenda. Est dolore animi similique recusandae dicta, odio deleniti nihil repellendus temporibus eos? Repellendus numquam vero labore.</p>
+    </div>
+    </div>
+   
+</body>
+</html>
