@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
-        *{
-            margin: 0px;
-            padding: 0px;
+        body, html {
+            margin: 0;
+            padding: 0;
             height: 100%;
         }
-        .cabe{
-            margin: 100px;
-            height: 100%;
-            background-color:white;
+
+        .cabe {
+            width: 100%;
+            height: 100px;
+            background-color: #e38dd;
         }
-        .input{
+
+        input {
             width: 20%;
             height: 30px;
             font-size: 18px;
@@ -25,13 +27,214 @@
             background-color: #ffffff;
             border: solid rgb(1, 1, 1) 1.5px;
             border-radius: 10px;
-            
+            background-image: url(Imagem/64673.png);
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-position: top 5px right 10px;
+            margin-top: 30px;
+            margin-right: 20px;
+            float: right;
+        }
 
+        .logo {
+            float: left;
+            text-indent: 20px;
+            width: 20%;
+        }
+
+        .cabe ul {
+            float: left;
+            width: 50%;
+            margin: 0px 0px 0px 20px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .cabe ul li {
+            text-decoration: none;
+            display: inline;
+            padding: 20px;
+            color: rgb(13, 66, 13);
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .cabe ul li:hover {
+            color: rgb(25, 121, 25);
+        }
+
+        .box1, .box2, .box3, .box4 {
+            position: relative;
+            height: 100%;
+            opacity: 0.7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .box1 {
+            background-image: url(Imagem/bAP.gif);
+        }
+
+        .box2 {
+            background-image: url(Imagem/foto02.jpg);
+        }
+        .box3 {
+            background-image: url('Imagem/foto03.jpg');
+        }
+
+        .box4 {
+            background-image: url('Imagem/foto04.jpg');
+        }
+
+        .cont-img {
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .cont-img span.titulo1 {
+            background-color: rgb(13, 66, 13);
+            color: #ffffff;
+            padding: 20px;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        .conteudo {
+            background-color: #e3e8dd;
+            color: rgb(13, 66, 13);
+            text-align: justify;
+            padding: 50px 100px 40px 100px;
+            background-image: url('Imagem/moldd1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: rgb(13, 66, 13);
+            text-align: center;
+        }
+
+        .roda {
+            margin-top: -20px;
+            height: 330px;
+            background-color: #e3e8dd;
+        }
+
+        .roda .down_up {
+            text-align: center;
+            color: rgb(13, 66, 13);
+            font-family: 'Finger Paint', cursive;
+            font-size: 4em;
+        }
+
+        .roda .down_meio {
+            text-align: center;
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;
+            color: rgb(13, 66, 13);
+        }
+
+        .roda .down_down {
+            text-align: center;
+        }
+
+        .roda .down_down img {
+            width: 40px;
+            border-radius: 25px;
+            border: 4px rgb(13, 66, 13) dotted;
+            cursor: pointer;
+            margin: 20px;
+            padding: 5px;
         }
     </style>
-</head>
+   </head>
 <body>
+    <div class="cabe">
+        <div class="logo">Logo</div>
+        <ul>
+            <li>Início</li>
+            <li>Sobre</li>
+            <li>Serviços</li>
+            <li>Contato</li>
+        </ul>
+        <input type="text" placeholder="Buscar...">
+    </div>
 
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="cont-img">
+            <span class="titulo1">Bem-vindo ao nosso site!</span>
+        </div>
+    </div>
+    <div class="box4"></div>
+
+    <div class="conteudo">
+        <h2>Seção de Conteúdo</h2>
+        <p>Este é um exemplo de parágrafo com formatação especial, plano de fundo e fontes personalizadas.</p>
+    </div>
+
+    <div class="roda">
+        <div class="down_up">Rodapé</div>
+        <div class="down_meio">Algum texto informativo ou links</div>
+        <div class="down_down">
+            <img src="Imagem/icon1.png" alt="Ícone 1">
+            <img src="Imagem/icon2.png" alt="Ícone 2">
+        </div>
+    </div>
+    <div class="box1">
+        <div class="cont-img">
+          <span class="titulo">NATUREZA É REAL</span>
+        </div>
+      </div>
+    
+      <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quidem culpa nulla excepturi enim qui iure deleniti reprehenderit in, debitis dolorum atque vero recusandae ab. Nisi hic commodi blanditiis a.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, cum odit nobis excepturi quos ea, vero commodi aperiam inventore eius illo animi. Exercitationem repudiandae sequi facilis tempora hic voluptas quod?</p>
+      </div>
+    
+      <div class="box2">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É VIVA</span>
+            </div>
+        </div>
+        <div class="conteudo">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur hic sunt atque voluptatibus! Recusandae ab eaque dolorem error cumque. Excepturi dolore tempore culpa voluptatem nemo qui error quod dicta reiciendis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sed tempora minus, quam velit praesentium odio nobis reiciendis id obcaecati repellendus alias delectus consectetur aliquam neque sit vel numquam doloremque!</p>
+        </div>
+        <div class="box3">
+            <div class="cont-img">
+              <span class="titulo1">NATUREZA É NOSSA</span>
+            </div>
+        </div>
+            <div class="conteudo">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, sunt. Reiciendis dolores laudantium corrupti odio sunt eveniet nemo dolorem beatae recusandae, molestiae cupiditate in veritatis possimus eos illum incidunt rem.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam quam totam aperiam fuga veniam cumque provident veritatis est earum ipsa obcaecati, possimus facere inventore tempore repudiandae ad sapiente? Optio!</p>
+
+                <div class="box4"></div>
+                    <div class="cont-img"></div>
+                        <span class="titulo1">NATUREZA É VIDA</span>
+      <div class="roda">
+        <br><br><br><br>
+        <div class="down_up">NATUREZA</div>
+        <div class="down_meio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro aspernatur mollitia ratione optio quisquam quos, aliquid praesentium soluta voluptates nesciunt id ut cum repellat, fugit expedita rerum distinctio vel!<br>|#Natureza</div>
+       <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="" ></a>
+       <a href="https://www.instagram.com/" target="_blank"><img src="" ></a>
+       <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><img src="" </a>
+        </div>
+      </div>
         
 </body>
 </html>
